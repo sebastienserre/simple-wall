@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 Simply display your Page Facebook Wall
 
 == Description ==
-Simple Facebook Wall only embed a shortcode to display a Facebook public page.
+Simple Facebook Wall only embed a shortcode and a block to display a Facebook public page.
 
 == Changelog ==
 ## 1.0.0= 13 jan 2022 ##
