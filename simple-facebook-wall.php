@@ -1,0 +1,35 @@
+<?php
+/**
+ * Plugin Name: Simple Facebook Wall
+ * Plugin URI: https://www.thivinfo.com
+ * Description: Display your FB page timeline with a shortcode
+ * Author: Sébastien SERRE
+ * Author URI: https://thivinfo.com
+ * Text Domain: simple-facebook-wall
+ * Requires at least: 4.6
+ * Version: 1.0.0
+ * License: GPL v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ **/
+
+/**
+ * Plugin developed by a third party developper not in contact with Facebook company
+ */
+
+add_action( 'plugins_loaded', 'sfw_define_constant' );
+function sfw_define_constant() {
+	define( 'SIMPLE_FB_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+	define( 'SIMPLE_FB_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+	define( 'SIMPLE_FB_PLUGIN_DIR', untrailingslashit( SIMPLE_FB_PLUGIN_PATH ) );
+	define( 'SIMPLE_FB_CUST_INC', SIMPLE_FB_PLUGIN_PATH . 'inc/' );
+}
+
+add_action( 'plugins_loaded', 'sfw_load_files' );
+function sfw_load_files() {
+	$files = scandir( SIMPLE_FB_CUST_INC );
+	foreach ( $files as $file ) {
+		if ( is_file( SIMPLE_FB_CUST_INC . $file ) ) {
+			require SIMPLE_FB_CUST_INC . $file;
+		}
+	}
+}
