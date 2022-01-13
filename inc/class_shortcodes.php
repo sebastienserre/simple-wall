@@ -39,7 +39,7 @@ class Shortcodes {
 	 */
 	public function fb_script() {
 		$content = get_the_content();
-		if ( has_shortcode( $content, 'facebook_wall' ) ) {
+		if ( has_shortcode( $content, 'simple_wall' ) ) {
 			echo '<div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v12.0" nonce="V2oYdNpC"></script>';
 		}
