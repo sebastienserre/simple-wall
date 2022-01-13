@@ -3,7 +3,7 @@
 class Shortcodes {
 
 	public function init() {
-		add_shortcode( 'facebook_wall', array( $this, 'wall_shortcodes' ) );
+		add_shortcode( 'simple_wall', array( $this, 'wall_shortcodes' ) );
 
 		add_action( 'wp_body_open', array( $this, 'fb_script' ) );
 	}
@@ -21,7 +21,7 @@ class Shortcodes {
 				'height' => '',
 			),
 			$atts,
-			'facebook_wall'
+			'simple_wall'
 		);
 		ob_start();
 		?>

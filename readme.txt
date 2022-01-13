@@ -1,4 +1,4 @@
-=== Simple Facebook Wall ===
+=== Simple Wall ===
 Contributors: sebastienserre
 Tags: FaceBook, Wall, shortcode, timeline
 Donate link: https://github.com/sponsors/sebastienserre

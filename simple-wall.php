@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: Simple Facebook Wall
+ * Plugin Name: Simple Wall
  * Plugin URI: https://www.thivinfo.com
  * Description: Display your FB page timeline with a shortcode
  * Author: Sébastien SERRE
  * Author URI: https://thivinfo.com
- * Text Domain: simple-facebook-wall
+ * Text Domain: simple-wall
  * Requires at least: 4.6
  * Version: 1.0.0
  * License: GPL v2 or later
