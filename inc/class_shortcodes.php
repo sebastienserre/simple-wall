@@ -2,17 +2,22 @@
 
 class Shortcodes {
 
-	public function init(){
+	public function init() {
 		add_shortcode( 'facebook_wall', array( $this, 'wall_shortcodes' ) );
 
 		add_action( 'wp_body_open', array( $this, 'fb_script' ) );
 	}
 
-	public function wall_shortcodes( $atts ){
+	/**
+	 * @param $atts array list of arguments
+	 *
+	 * @return false|string
+	 */
+	public function wall_shortcodes( $atts ) {
 		$atts = shortcode_atts(
 			array(
-				'url' => '',
-				'width' =>'',
+				'url'    => '',
+				'width'  => '',
 				'height' => '',
 			),
 			$atts,
@@ -20,11 +25,18 @@ class Shortcodes {
 		);
 		ob_start();
 		?>
-        <div class="fb-page" data-href="<?php echo esc_url( $atts['url'] ); ?>" data-tabs="timeline" data-width="<?php echo $atts['width']; ?>" data-height="<?php echo $atts['height']; ?>" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
-<?php
+        <div class="fb-page" data-href="<?php echo esc_url( $atts['url'] ); ?>" data-tabs="timeline" data-width="<?php echo $atts['width']; ?>"
+             data-height="<?php echo $atts['height']; ?>" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+             data-show-facepile="true"></div>
+		<?php
 		return ob_get_clean();
 	}
 
+	/**
+     * Facebook script
+     * @see https://developers.facebook.com/docs/plugins/page-plugin/
+	 * @return void
+	 */
 	public function fb_script() {
 		$content = get_the_content();
 		if ( has_shortcode( $content, 'facebook_wall' ) ) {
@@ -33,5 +45,6 @@ class Shortcodes {
 		}
 	}
 }
+
 $shortcodes = new Shortcodes();
 $shortcodes->init();
