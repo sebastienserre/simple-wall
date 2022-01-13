@@ -1,5 +1,5 @@
 === Simple Wall ===
-Contributors: sebastienserre
+Contributors: sebastienserre, chaton666
 Tags: FaceBook, Wall, shortcode, timeline
 Donate link: https://github.com/sponsors/sebastienserre
 Requires at least: 4.6
