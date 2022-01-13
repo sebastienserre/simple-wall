@@ -1,0 +1,25 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "simple-wall/wall",
+	"version": "0.1.0",
+	"title": "Simple Wall",
+	"category": "widgets",
+	"icon": "facebook",
+	"description": "Display Facebook Page Wall",
+	"textdomain": "simple wall",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css",
+	"attributes": {
+        "url": {
+            "type": "string"
+        },
+		"width": {
+            "type": "string"
+        },
+		"height": {
+            "type": "string"
+        }
+    }
+}
