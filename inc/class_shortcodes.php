@@ -1,5 +1,7 @@
 <?php
 
+namespace SimpleWall\Shortcodes;
+
 class Shortcodes {
 
 	public function init() {
@@ -25,8 +27,8 @@ class Shortcodes {
 		);
 		ob_start();
 		?>
-        <div class="fb-page" data-href="<?php echo esc_url( $atts['url'] ); ?>" data-tabs="timeline" data-width="<?php echo $atts['width']; ?>"
-             data-height="<?php echo $atts['height']; ?>" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+        <div class="fb-page" data-href="<?php echo esc_url( $atts['url'] ); ?>" data-tabs="timeline" data-width="<?php echo esc_attr( $atts['width'] ); ?>"
+             data-height="<?php echo esc_attr( $atts['height'] ); ?>" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
              data-show-facepile="true"></div>
 		<?php
 		return ob_get_clean();

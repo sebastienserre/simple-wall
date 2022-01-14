@@ -1,4 +1,6 @@
 <?php
+
+namespace SimpleWall;
 /**
  * Plugin Name: Simple Wall
  * Plugin URI: https://www.thivinfo.com
@@ -16,16 +18,16 @@
  * Plugin developed by a third party developper not in contact with Facebook company
  */
 
-add_action( 'plugins_loaded', 'sfw_define_constant' );
-function sfw_define_constant() {
+add_action( 'plugins_loaded', 'SimpleWall\define_constant' );
+function define_constant() {
 	define( 'SIMPLE_FB_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 	define( 'SIMPLE_FB_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 	define( 'SIMPLE_FB_PLUGIN_DIR', untrailingslashit( SIMPLE_FB_PLUGIN_PATH ) );
 	define( 'SIMPLE_FB_CUST_INC', SIMPLE_FB_PLUGIN_PATH . 'inc/' );
 }
 
-add_action( 'plugins_loaded', 'sfw_load_files' );
-function sfw_load_files() {
+add_action( 'plugins_loaded', 'SimpleWall\load_files' );
+function load_files() {
 	$files = scandir( SIMPLE_FB_CUST_INC );
 	foreach ( $files as $file ) {
 		if ( is_file( SIMPLE_FB_CUST_INC . $file ) ) {
