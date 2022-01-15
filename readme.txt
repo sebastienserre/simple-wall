@@ -4,7 +4,7 @@ Tags: FaceBook, Wall, shortcode, timeline
 Donate link: https://github.com/sponsors/sebastienserre
 Requires at least: 4.6
 Tested up to: 5.8
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPL v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -32,6 +32,9 @@ Simple Wall only display wall from public Facebook pages. No user profile.
 
 
 == Changelog ==
+## 1.0.1 = 15 jan 2022##
+* Commestic change (readme / wrong indent )
+
 ## 1.0.0= 13 jan 2022 ##
 * Initial commit
 * Add a simple Shortcode
