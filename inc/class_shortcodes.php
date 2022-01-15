@@ -29,7 +29,8 @@ class Shortcodes {
 		?>
         <div class="fb-page" data-href="<?php echo esc_url( $atts['url'] ); ?>" data-tabs="timeline" data-width="<?php echo esc_attr( $atts['width'] ); ?>"
              data-height="<?php echo esc_attr( $atts['height'] ); ?>" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-             data-show-facepile="true"></div>
+             data-show-facepile="true">
+		</div>
 		<?php
 		return ob_get_clean();
 	}
