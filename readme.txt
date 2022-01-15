@@ -1,6 +1,6 @@
 === Simple Wall ===
 Contributors: sebastienserre, chaton666
-Tags: FaceBook, Wall, shortcode, timeline
+Tags: Facebook, wall, shortcode, timeline, social network
 Donate link: https://github.com/sponsors/sebastienserre
 Requires at least: 4.6
 Tested up to: 5.9
@@ -12,6 +12,7 @@ Simply display your Page Facebook Wall
 
 == Description ==
 Simple Wall only embed a shortcode and a block to display a Facebook public page.
+Facebook is a trademark owned by Meta Platform Inc. Thivinfo.com has no link with this company or this Trademark.
 
 == Frequently Asked Questions ==
 
@@ -30,14 +31,11 @@ Simple Wall only display wall from public Facebook pages. No user profile.
 1. Render
 2. Settings
 
-
 == Changelog ==
-## 1.0.1 = 15 jan 2022##
+= 1.0.1 (2022-01-15) =
 * Commestic change (readme / wrong indent )
 
-## 1.0.0= 13 jan 2022 ##
+= 1.0.0 (2022-01-13) =
 * Initial commit
 * Add a simple Shortcode
 * Add a gutenberg block (Thx to Marie Comet @chaton666)
-
-Facebook is a trademark owned by Meta Platform Inc. Thivinfo.com has no link with this company or this Trademark.
