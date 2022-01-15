@@ -22,7 +22,7 @@ Simple Facebook Wall only embed a shortcode and a block to display a Facebook pu
   - height
   - width
   Example [simple_wall url='https://www.facebook.com/MotoGP/' width=300 height=600]
-= Why my wall isn't displaed ? =
+= Why my wall isn't displayed ? =
 Do you try to show the wall of a private page/profile?
 Simple Wall only display wall from public Facebook pages. No user profile.
 
