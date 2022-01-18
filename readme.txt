@@ -12,6 +12,7 @@ Simply display your Page Facebook Wall
 
 == Description ==
 Simple Wall only embed a shortcode and a block to display a Facebook public page.
+This plugin allows you to add the official Facebook widget available at https://developers.facebook.com/docs/plugins/page-plugin without any coding.
 Facebook is a trademark owned by Meta Platform Inc. Thivinfo.com has no link with this company or this Trademark.
 
 == Frequently Asked Questions ==
@@ -32,10 +33,10 @@ Do you try to show the wall of a private page/profile?
 Simple Wall only display wall from public Facebook pages. No user profile.
 
 = I've found a bug, how to report it ? =
-Feel to report an issue to my [GitHub](https://github.com/sebastienserre/simple-wall/issues/new/choose)
+Feel free to report an issue to my [GitHub](https://github.com/sebastienserre/simple-wall/issues/new/choose)
 
 = I've an idea to improve this plugin, how to report it ? =
-Feel to report an enhancement to my [GitHub](https://github.com/sebastienserre/simple-wall/issues/new?assignees=&labels=&template=feature_request.md&title=)
+Feel free to report an enhancement to my [GitHub](https://github.com/sebastienserre/simple-wall/issues/new?assignees=&labels=&template=feature_request.md&title=)
 
 = Where can I find help ? =
 Please use the [WordPress forum]( https://wordpress.org/support/plugin/simple-wall/ ), I will make my best to answer and help you asap.
