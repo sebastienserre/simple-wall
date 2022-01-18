@@ -9,13 +9,13 @@ namespace SimpleWall;
  * Author URI: https://thivinfo.com/en
  * Text Domain: simple-wall
  * Requires at least: 4.6
- * Version: 1.0.1
+ * Version: 1.0.2
  * License: GPL v2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  **/
 
 /**
- * Plugin developed by a third party developper not in contact with Facebook company
+ * Plugin developed by a third party developer not in contact with Facebook company
  */
 
 add_action( 'plugins_loaded', 'SimpleWall\define_constant' );
