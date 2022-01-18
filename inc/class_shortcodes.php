@@ -16,6 +16,7 @@ class Shortcodes {
 	 * @return false|string
 	 */
 	public function wall_shortcodes( $atts ) {
+		//return '<div>test</div>';
 		$atts = shortcode_atts(
 			array(
 				'url'    => '',
@@ -27,9 +28,13 @@ class Shortcodes {
 		);
 		ob_start();
 		?>
-        <div class="fb-page" data-href="<?php echo esc_url( $atts['url'] ); ?>" data-tabs="timeline" data-width="<?php echo esc_attr( $atts['width'] ); ?>"
-             data-height="<?php echo esc_attr( $atts['height'] ); ?>" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-             data-show-facepile="true">
+		<div class="simple_wall_shortcode">
+			<div class="fb-page" data-href="<?php echo esc_url( $atts['url'] ); ?>" data-tabs="timeline"
+				 data-width="<?php echo esc_attr( $atts['width'] ); ?>"
+				 data-height="<?php echo esc_attr( $atts['height'] ); ?>" data-small-header="false" data-adapt-container-width="true"
+				 data-hide-cover="false"
+				 data-show-facepile="true">
+			</div>
 		</div>
 		<?php
 		return ob_get_clean();
