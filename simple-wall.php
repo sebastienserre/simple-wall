@@ -9,7 +9,7 @@ namespace SimpleWall;
  * Author URI: https://thivinfo.com/en
  * Text Domain: simple-wall
  * Requires at least: 4.6
- * Version: 1.0.2
+ * Version: 1.0.3
  * License: GPL v2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  **/
