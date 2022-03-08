@@ -4,7 +4,7 @@ Tags: Facebook, wall, shortcode, timeline, social network
 Donate link: https://github.com/sponsors/sebastienserre
 Requires at least: 4.6
 Tested up to: 5.9
-Stable tag: 1.0.3
+Stable tag: 1.1.0
 License: GPL v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -47,6 +47,10 @@ Please use the [WordPress forum]( https://wordpress.org/support/plugin/simple-wa
 3. Settings Shortcode
 
 == Changelog ==
+
+= 1.1.0 = (2022-03-08) =
+* Display the Facebook Wall in the WordPress locale. Thx to @elizwood-1
+
 = 1.0.3 (2022-01-19) =
 * add a filter to allow displaying Simple Wall if not added in the content (simple_wall_shortcode_location)
 
