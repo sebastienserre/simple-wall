@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 Simply display your Page Facebook Wall
 
 == Description ==
-Simple Wall only embed a shortcode and a block to display a Facebook public page.
+Simple Wall embed a shortcode and a block to display a Facebook public page.
 This plugin allows you to add the official Facebook widget available at https://developers.facebook.com/docs/plugins/page-plugin without any coding.
 Facebook is a trademark owned by Meta Platform Inc. Thivinfo.com has no link with this company or this Trademark.
 
@@ -48,7 +48,7 @@ Please use the [WordPress forum]( https://wordpress.org/support/plugin/simple-wa
 
 == Changelog ==
 
-= 1.1.0 = (2022-03-08) =
+= 1.1.0 (2022-03-08) =
 * Display the Facebook Wall in the WordPress locale. Thx to @elizwood-1
 * Compatible with Polylang (tested) & WPML (not tested).
 
