@@ -65,6 +65,7 @@ class Shortcodes {
 	 * @return void
 	 */
 	public function fb_script() {
+		$locale = simplewall_get_fb_locale();
 		/**
 		 * Allow developers to add location to display the shortcode, for example in an ACF field.
 		 */
@@ -72,7 +73,7 @@ class Shortcodes {
 		foreach ( $contents as $content ) {
 			if ( has_shortcode( $content, 'simple_wall' ) ) {
 				echo '<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v12.0" nonce="V2oYdNpC"></script>';
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/' . $locale . '/sdk.js#xfbml=1&version=v12.0" nonce="V2oYdNpC"></script>';
 			}
 		}
 	}
