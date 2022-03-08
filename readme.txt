@@ -50,6 +50,7 @@ Please use the [WordPress forum]( https://wordpress.org/support/plugin/simple-wa
 
 = 1.1.0 = (2022-03-08) =
 * Display the Facebook Wall in the WordPress locale. Thx to @elizwood-1
+* Compatible with Polylang (tested) & WPML (not tested).
 
 = 1.0.3 (2022-01-19) =
 * add a filter to allow displaying Simple Wall if not added in the content (simple_wall_shortcode_location)
