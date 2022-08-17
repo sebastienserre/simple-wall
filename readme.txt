@@ -4,7 +4,7 @@ Tags: Facebook, wall, shortcode, timeline, social network
 Donate link: https://github.com/sponsors/sebastienserre
 Requires at least: 4.6
 Tested up to: 6.0
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPL v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -47,6 +47,10 @@ Please use the [WordPress forum]( https://wordpress.org/support/plugin/simple-wa
 3. Settings Shortcode
 
 == Changelog ==
+
+= 1.1.2 (2022-08-17) =
+* Tested up to WordPress 6.1
+
 = 1.1.1 (2022-05-06) =
 * Tested up to WordPress 6.0
 
