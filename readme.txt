@@ -47,6 +47,10 @@ Please use the [WordPress forum]( https://wordpress.org/support/plugin/simple-wa
 3. Settings Shortcode
 
 == Changelog ==
+
+= 1.1.2 (2022-08-17) =
+* Tested up to WordPress 6.1
+
 = 1.1.1 (2022-05-06) =
 * Tested up to WordPress 6.0
 
