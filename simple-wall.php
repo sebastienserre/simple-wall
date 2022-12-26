@@ -8,7 +8,7 @@ namespace SimpleWall;
  * Author: Sébastien SERRE
  * Author URI: https://thivinfo.com/en
  * Text Domain: simple-wall
- * Requires at least: 4.6
+ * Requires at least: 5.3
  * Tested up to: 6.1
  * Version: 1.1.3
  * License: GPL v2 or later
