@@ -55,8 +55,10 @@ class Shortcodes {
 	}
 
 	function convert_url( $url ){
-		$slug = explode( 'https://facebook.com/', $url );
-		$slug = $slug[1];
+		$re = '/(facebook\.com\/)(\d*\w*)/m';
+
+		preg_match_all($re, $url, $matches, PREG_SET_ORDER, 0);
+		$slug = $matches[0][2];
 		return $slug;
 	}
 
