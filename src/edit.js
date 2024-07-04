@@ -47,7 +47,7 @@ export default function Edit( { attributes, setAttributes, isSelected } ) {
 			<div { ...useBlockProps() }>
 				{ isSelected ? (
 					<TextControl
-						label={ __( 'Slug', 'simple-wall' ) }
+						label={ __( 'Slug ("MotoGP" for https://fr-fr.facebook.com/MotoGP)', 'simple-wall' ) }
 						value={ url }
 						onChange={ ( value ) =>
 							setAttributes( { url: value } )
