@@ -47,7 +47,7 @@ export default function Edit( { attributes, setAttributes, isSelected } ) {
 			<div { ...useBlockProps() }>
 				{ isSelected ? (
 					<TextControl
-						label={ __( 'URL', 'simple-wall' ) }
+						label={ __( 'Slug', 'simple-wall' ) }
 						value={ url }
 						onChange={ ( value ) =>
 							setAttributes( { url: value } )
@@ -68,6 +68,6 @@ export default function Edit( { attributes, setAttributes, isSelected } ) {
 				) }
 			</div>
 		</Fragment>
-		
+
 	);
 }
