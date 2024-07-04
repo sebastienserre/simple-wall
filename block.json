@@ -7,7 +7,7 @@
 	"category": "widgets",
 	"icon": "facebook",
 	"description": "Display Facebook Page Wall",
-	"textdomain": "simple wall",
+	"textdomain": "simple-wall",
 	"editorScript": "file:./build/index.js",
 	"editorStyle": "file:./build/index.css",
 	"style": "file:./build/style-index.css",
