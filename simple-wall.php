@@ -10,7 +10,7 @@ namespace SimpleWall;
  * Text Domain: simple-wall
  * Requires at least: 6.3
  * Requires PHP: 8.0
- * Tested up to: 6.6
+ * Tested up to: 6.7
  * Version: 1.1.4
  * License: GPL v2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
