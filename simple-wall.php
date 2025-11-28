@@ -10,8 +10,8 @@ namespace SimpleWall;
  * Text Domain: simple-wall
  * Requires at least: 6.3
  * Requires PHP: 8.0
- * Tested up to: 6.7
- * Version: 1.1.4
+ * Tested up to: 6.9
+ * Version: 1.1.5
  * License: GPL v2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  **/
@@ -22,7 +22,7 @@ namespace SimpleWall;
 
 add_action( 'plugins_loaded', 'SimpleWall\define_constant' );
 function define_constant() {
-	define( 'SIMPLE_VERSION', '1.1.4' );
+	define( 'SIMPLE_VERSION', '1.1.5' );
 	define( 'SIMPLE_FB_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 	define( 'SIMPLE_FB_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 	define( 'SIMPLE_FB_PLUGIN_DIR', untrailingslashit( SIMPLE_FB_PLUGIN_PATH ) );
@@ -37,4 +37,19 @@ function load_files() {
 			require SIMPLE_FB_CUST_INC . $file;
 		}
 	}
+}
+
+add_action( 'wp_enqueue_scripts', 'SimpleWall\register_scripts');
+function register_scripts() {
+	$locale = simplewall_get_fb_locale();
+	wp_register_script(
+		'facebook-jssdk',
+		'https://connect.facebook.net/' . esc_attr( $locale ) . '/sdk.js#xfbml=1&version=v13.0',
+		array(),
+		null,
+		array(
+		//	'in_footer' => true,
+			'strategy'  => 'defer',
+		)
+	);
 }
