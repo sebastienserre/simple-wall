@@ -49,6 +49,10 @@ Please use the [WordPress forum]( https://wordpress.org/support/plugin/simple-wa
 
 == Changelog ==
 
+= 1.1.5 (2025-11-28) =
+* Tested up to 6.9
+* Fix JS enqueuing issue
+
 = 1.1.3 (2022-08-17) =
 * I don't like SVN
 
