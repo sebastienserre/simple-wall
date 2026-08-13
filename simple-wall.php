@@ -10,8 +10,8 @@ namespace SimpleWall;
  * Text Domain: simple-wall
  * Requires at least: 6.3
  * Requires PHP: 8.0
- * Tested up to: 6.9
- * Version: 1.1.5
+ * Tested up to: 7.1
+ * Version: 1.1.6
  * License: GPL v2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  **/
@@ -19,6 +19,9 @@ namespace SimpleWall;
 /**
  * Plugin developed by a third party developer not in contact with Facebook company
  */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+} // Exit if accessed directly.
 
 add_action( 'plugins_loaded', 'SimpleWall\define_constant' );
 function define_constant() {
@@ -46,7 +49,7 @@ function register_scripts() {
 		'facebook-jssdk',
 		'https://connect.facebook.net/' . esc_attr( $locale ) . '/sdk.js#xfbml=1&version=v13.0',
 		array(),
-		null,
+		13,
 		array(
 		//	'in_footer' => true,
 			'strategy'  => 'defer',

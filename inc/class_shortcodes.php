@@ -1,7 +1,9 @@
 <?php
 
 namespace SimpleWall\Shortcodes;
-
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+} // Exit if accessed directly.
 class Shortcodes {
 
 	public function init() {

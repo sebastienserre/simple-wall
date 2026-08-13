@@ -2,7 +2,9 @@
 /**
  * Register blocks.
  */
-
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+} // Exit if accessed directly.
 function simple_wall_register_blocks() {
 	register_block_type( SIMPLE_FB_PLUGIN_PATH );
 }
