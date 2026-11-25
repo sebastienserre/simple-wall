@@ -3,14 +3,14 @@
 namespace SimpleWall;
 /**
  * Plugin Name: Simple Wall
-  * Plugin URI: https://thivinfo.com/en
+ * Plugin URI: https://thivinfo.com/en
  * Description: Display your FB page timeline with a shortcode or a block
  * Author: Sébastien SERRE
  * Author URI: https://thivinfo.com/en
  * Text Domain: simple-wall
  * Requires at least: 6.3
  * Requires PHP: 8.1
- * Version: 1.1.6
+ * Version: 1.1.7
  * License: GPL v2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  **/
