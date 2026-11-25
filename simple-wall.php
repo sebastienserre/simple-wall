@@ -9,8 +9,7 @@ namespace SimpleWall;
  * Author URI: https://thivinfo.com/en
  * Text Domain: simple-wall
  * Requires at least: 6.3
- * Requires PHP: 8.0
- * Tested up to: 7.1
+ * Requires PHP: 8.1
  * Version: 1.1.6
  * License: GPL v2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -25,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 add_action( 'plugins_loaded', 'SimpleWall\define_constant' );
 function define_constant() {
-	define( 'SIMPLE_VERSION', '1.1.5' );
+	define( 'SIMPLE_VERSION', '1.1.7' );
 	define( 'SIMPLE_FB_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 	define( 'SIMPLE_FB_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 	define( 'SIMPLE_FB_PLUGIN_DIR', untrailingslashit( SIMPLE_FB_PLUGIN_PATH ) );

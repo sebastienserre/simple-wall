@@ -3,9 +3,9 @@ Contributors: sebastienserre, chaton666
 Tags: Facebook, wall, shortcode, timeline, social network
 Donate link: https://github.com/sponsors/sebastienserre
 Requires at least: 6.3
-Requires PHP: 8.0
-Tested up to: 7.1
-Stable tag: 1.1.6
+Requires PHP: 8.1
+Tested up to: 7.2
+Stable tag: 1.1.7
 License: GPL v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -48,6 +48,10 @@ Please use the [WordPress forum]( https://wordpress.org/support/plugin/simple-wa
 3. Settings Shortcode
 
 == Changelog ==
+= 1.1.7 (2026-11-25) =
+* Tested up to 7.2
+* Tested up to PHP 8.6 (Seems OK)
+
 = 1.1.6 (2026-08-13) =
 * Tested up to 7.1
 * Fix issue with the block editor
